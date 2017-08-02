@@ -1,0 +1,48 @@
+.container{
+	display:inline-block;
+.headingdiv{
+	color:red;
+	font-family:fantasy;
+}
+}
+#taskhead{
+	text-align:center;
+}
+table th,td{
+	text-align:left;
+	height:50px;
+	width:100%;
+}
+table{
+    position:relative;
+	border-collapse:collapse;
+}
+th{
+	background-color: #4CAF50;
+    color: white;
+}
+td{
+	vertical-align:middle;
+
+}
+th,td{
+	padding:15px;
+	border-bottom: 1px solid #ddd;
+
+}
+tr:hover {background-color: #f5f5f5}
+tr:nth-child(even) {background-color: #f2f2f2}
+.tablediv{
+	overflow-x:auto;
+}
+#addform{
+	display:block;
+    position:relative;
+    height:50px;
+    float:right;
+}
+#addbut{
+    display:block;
+    height:50px;
+ 
+    }

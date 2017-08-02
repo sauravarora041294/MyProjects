@@ -1,0 +1,19 @@
+<table id="cart">
+<tr><th>S.no</th><th>Item name</th><th>Amount</th><th>Quantity</th><th>Total Amount</th></tr>
+<tbody>
+{{#each cart_data}}
+<tr id="row">
+  <td>{{id}}</td>
+  <td>{{title}}</td>
+  <td>{{mrp}}</td>
+  <td>{{quantity}}</td>
+  <td>{{itemtotal mrp quantity}}</td>
+</tr>
+{{/each}}
+<tr>
+<td colspan="5" id="totalamt"><u>Cart Amount :{{total cart_data}}</u></td>
+</tr>
+</tbody>
+</table>
+
+</div>

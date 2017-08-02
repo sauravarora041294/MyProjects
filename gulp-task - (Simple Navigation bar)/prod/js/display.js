@@ -1,0 +1,1 @@
+$.ajax({dataType:"json",url:"http://127.0.0.1:8080/data.json",success:function(a){var t;console.log(a),t=MyApp.templates.mylist,$("#nav").html(t(a))}});

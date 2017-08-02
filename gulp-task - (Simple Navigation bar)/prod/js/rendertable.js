@@ -1,0 +1,1 @@
+$.ajax({dataType:"json",url:"http://127.0.0.1:8080/tabledata.json",success:function(t){var a;console.log(t),a=MyApp.templates.tabletemplate,$(".tablediv").html(a(t))}});

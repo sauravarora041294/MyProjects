@@ -1,0 +1,16 @@
+{
+	"products":[
+		{"id":0, "title":"Dairy Milk Chocolate 40 gm", "mrp":100, "cp":120, "stock":10, "brand":"Dairy milk", "quantity":0}, 
+		{"id":1, "title":"Chocolate biscuits", "mrp":10, "cp":8, "stock":100, "brand":"Britannia", "quantity":0},
+		{"id":2, "title":"Detergent powder", "mrp":80, "cp":70, "stock":50, "brand":"Surf Excel", "quantity":0},
+		{"id":3, "title":"32 inch LED TV", "mrp":10000, "cp":85000, "stock":10, "brand":"samsung", "quantity":0},
+		{"id":4, "title":"Glass cleaner", "mrp":80, "cp":70, "stock":10, "brand":"Colin", "quantity":0},
+		{"id":5, "title":"Olive oil", "mrp":600, "cp":550, "stock":10, "brand":"Saffola", "quantity":0},
+		{"id":6, "title":"200gm toothpaste", "mrp":70, "cp":60, "stock":10, "brand":"colgate", "quantity":0},
+		{"id":7, "title":"Anti-dandruff shampoo", "mrp":100, "cp":90, "stock":10, "brand":"Sunsilk", "quantity":0},
+		{"id":8, "title":"Cologne spray", "mrp":500, "cp":430, "stock":10, "brand":"Gucci", "quantity":0},
+		{"id":9, "title":" Bluetooth speakers", "mrp":1000, "cp":900, "stock":100, "brand":"Sony", "quantity":0},
+		{"id":10, "title":" Bluetooth speakers", "mrp":1000, "cp":900, "stock":100, "brand":"Sony", "quantity":0},
+		{"id":11, "title":" washing machine", "mrp":10000, "cp":9000, "stock":100, "brand":"LG", "quantity":0}
+	]
+}

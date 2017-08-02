@@ -1,0 +1,60 @@
+.mynav {
+  overflow: hidden;
+  float: right; }
+  .mynav li {
+    display: block;
+    text-decoration: none;
+    float: left; }
+  .mynav a {
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 70px;
+    font-size: 20px;
+    background-color: black;
+    color: white; }
+    .mynav a:hover {
+      background-color: yellow;
+      color: black; }
+  .mynav li:hover .drop {
+    opacity: 1;
+    z-index: 1; }
+
+.drop {
+  width: 160%;
+  padding: 5px 0px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+  .drop li {
+    display: inline-block; }
+    .drop li a {
+      display: block; }
+
+.mynav2 {
+  overflow: hidden;
+  float: left; }
+  .mynav2 li {
+    display: block;
+    text-decoration: none;
+    float: center; }
+  .mynav2 a {
+    display: block;
+    float: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 60px;
+    font-size: 20px;
+    background-color: black;
+    color: white; }
+    .mynav2 a:hover {
+      background-color: yellow;
+      color: black; }
+
+.img {
+  display: inline-block;
+  background: url("../../arrow.ico");
+  background-size: cover;
+  height: 15px;
+  width: 15px; }

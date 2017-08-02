@@ -1,0 +1,15 @@
+<table>
+<thead>
+<th>Task</th><th>hours</th><th></th><th></th>
+</thead>
+<tbody class="udata">
+{{#each mytable}}
+<tr>
+	<td>{{task}}</td>
+	<td>{{hours}}</td>
+	<td><button id="{{@index}}" class="del"><img src="../delete.png" height="20" width="20"></button></td>
+	<td><button id="{{@index}}" class="edit"><img src="../edit.png" height="20" width="20"></button></td>
+</tr>
+{{/each}}
+</tbody>
+</table>

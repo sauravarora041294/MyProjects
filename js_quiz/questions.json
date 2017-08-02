@@ -1,0 +1,55 @@
+{
+	"question":[{
+		"quest":"What is the capital of India?",
+		"options":["Mumbai","New Delhi","Agra","Bangalore"],
+		"answer": "2"
+	},
+		{
+			"quest":"Country that has the highest in Barley Production ?",
+		"options":["China","India","Russia","France"],
+		"answer": "3"
+	    },
+	    {
+			"quest":"The metal whose salts are sensitive to light is ?",
+		"options":["zinc","copper","Aluminium","Silver"],
+		"answer": "4"
+	    },
+	    {
+			"quest":"The Central Rice Research Station is situated in ?",
+		"options":["Chennai","Cuttack","Bangalore","Quilon"],
+		"answer": "2"
+	    },
+	    {
+			"quest":"Which soil is suitable for agriculture ?",
+		"options":["Red soil","Sand","Black soil","Peaty soil"],
+		"answer": "4"
+	    },
+	    {
+			"quest":"Black soils are best suited for the cultivation of ?",
+		"options":["Cotton","Rice","Cereals","Sugarcane"],
+		"answer": "1"
+	    },
+	    {
+			"quest":"The device used for measuring altitudes is ?",
+		"options":["altimeter","ammeter","audiometer","galvanometer"],
+		"answer": "1"
+	    },
+	    {
+			"quest":"Which is considered as the biggest port of India ?",
+		"options":["Kolkata","Cochin","Chennai","Mumbai"],
+		"answer": "4"
+	    },
+	    {
+			"quest":"The gas used for making vegetables is ?",
+		"options":["Oxygen","Carbon dioxide","Hydrogen","Nitrogen"],
+		"answer": "3"
+	    },
+	    {
+			"quest":"The chief ore of Aluminium is ?",
+		"options":["Iron","Cryolite","Bauxite","Haematite"],
+		"answer": "3"
+	    }
+
+]
+
+}

@@ -1,0 +1,54 @@
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<title> JS quiz </title>
+</head>
+<body>
+<div class="centerhome">
+	<a href="#" class="buttoncenter">WELCOME</a>
+	<a href="#" class="buttonmain" id="topic1">Tutorials</a>
+	<a href="#" class="buttonmain" id="topic2">FAQs</a>
+	<a href="#" class="buttonmain" id="topic3">Activity</a>
+</div>
+
+<div class="quizhome">
+<div class="showhome">
+	<h1 class="welcometext">QUIZ</h1>
+</div>
+<div class="qsection">
+	<br>
+	<p class="quest"></p>
+	<input type="radio" name="qopt" value=1  > <span class="optn" id="opt1"></span> <br><br>
+	<input type="radio" name="qopt" value=2  > <span class="optn" id="opt2"></span><br><br>
+	<input type="radio" name="qopt" value=3  > <span class="optn" id="opt3"></span><br><br>
+	<input type="radio" name="qopt" value=4  > <span class="optn" id="opt4"> </span><br><br>
+</div>
+<div class="buttons">
+    <button class="combutton" id="savebtn">Next</button>
+	<button class="combutton" id="subbtn">Submit</button>
+</div>
+<div id="progressbar">
+	<div id="progress">
+</div></div>
+</div>
+
+<div class="maindiv">
+<div class="resulthead">Result</div>
+	<div class="resultdiv" id="myans">
+		<div class="resultbody"></div>
+		<button class="combutton" id="chkscore">Check score</button>
+		<p class="check_score"></p>
+	</div>
+	<div class="resultdiv" id="correctans">
+		 <div class="correctresultbody"></div>
+   	     <button class="combutton" id="correct_answers">Correct Answers</button>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="getdata.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

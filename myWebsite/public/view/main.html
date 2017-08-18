@@ -1,0 +1,23 @@
+<div class="col-md-8 pos parallex"><br>
+           <div class="thumbnail thmbnail" ng-repeat="cont in dbContent">
+                <img class="thumb img" src={{cont.url}}>
+                <div class="imageContent">
+                <a href="/{{cont._id}}" ng-click="viewDataPage()">
+                <h1 class="headData">
+                    {{cont.Name}} 
+                </h1> </a>
+                <p class="headData text-success">{{cont.Address}}</p>
+            </div> </div>
+</div>
+
+<div class="col-md-4 pos2"><br>
+         <div class="thumbnail side_container" ng-repeat="mydata in dbData">
+            <a href="#">
+                <img src="view/xyz.png">
+                <div>
+                    <h1 class="size-bg text-success" id="sidetxt">{{mydata.author}}</h1>
+                    <p class="size-sm text-warning" id="sidetxt">{{mydata.reader}}</p>  
+                </div>
+                </a>
+            </div> 
+</div>  

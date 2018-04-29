@@ -1,0 +1,144 @@
+<html>
+<head>
+	<style>
+		h1 {
+			color: black;
+			text-align: center;
+		}
+		#container {
+			position: relative;
+			left: 20%;
+		}
+		.main-wrap {
+			position: relative;
+			width: 50%;
+			border-width: 2px;
+			position: relative;
+			border-style: solid;
+			border-color:black;
+			height: 70%;
+			background-color: white;
+			float:left;
+		}
+		#user-wrap {
+			position: relative;
+			width:20%;
+			float:right;
+			height: 70%;
+		}
+		#textbox-wrap {
+			position: absolute;
+			bottom: 0;
+			background-color: white;
+			width:100%;
+		}
+		#connect-msg{
+			text-align: center;
+			color: grey;
+		}
+		#text_box{
+			height: 40%;
+		    padding: 5%;
+		    margin: 5px;
+		    width: 70%;	
+		}
+		#submit_button {
+			height: 40%;
+		    width: 25%;
+		    padding: 5%;
+		}
+		#main-text, #user-text {
+			background-color: black;
+			color: white;
+			height: 10%;
+			width: 100%;
+		}
+		#message-wrap {
+			font-size: 23px;
+		}
+
+</style>
+</head>
+<body>
+
+<div id="heading-wrap">
+		<h1> My Chat App </h1>
+</div>
+<div id="chat-room">
+		<span id="connect-msg"></span>
+		<div id="container">
+				<div class="main-wrap">
+					<span id="main-text"> Chat Box</span>
+					<div id="message-wrap"></div>
+					<div id="textbox-wrap">
+							<input type="text" id="text_box">
+							<button type="submit" id="submit_button" onclick="submit_msg()">Send</button>
+					</div>
+				</div>
+		</div>
+		<div id="user-wrap">
+			<span id="user-text"> Online Users </span>
+			<div id="connected-users"></div>
+		</div>
+</div>
+
+
+
+<div id="username-input"> 
+		<h2> Enter your Name </h2>
+		<input type="text" id="username"/><div id="error"></div>
+		<button type="submit" id="username-submit" onclick="submit_user()">Enter</button>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		  var socket = io.connect('http://localhost:18080');
+		  var connected_users = [];
+
+		  $('#chat-room').hide();
+		  	socket.on('welcome', function( data ) {
+		  		$('#connect-msg').html(data['data']);
+		  		setTimeout(function(){
+		  			$('#connect-msg').html('');
+		  			}, 2000);	
+		  	});
+
+
+
+		  	socket.on('users', function(data) {
+		  		var html ='';
+		  		for( var i=0; i< data.length; i++ ) {
+		  			html += data[i] + '<br/>';
+		  		}
+		  		 $('#connected-users').html(html);
+		  	});
+		
+			socket.on('message', function(data){
+					$('#message-wrap').append('<b>'+ data.username +': </b>' + data.msg+'<br/>');
+					$('#text_box').val('');
+			});
+
+		  	function submit_msg() {
+
+		  		var msg = $('#text_box').val();
+		 	 	if(msg) {
+		  			socket.emit('send', msg);	
+				}
+			}
+
+		  function submit_user() {
+		  	var user =$('#username').val();
+		  	socket.emit('username-submit', user, function(data) {
+		  		if(data) {
+		  			$('#chat-room').show();
+		  			$('#username-input').hide();
+		  		} else{
+		  			$('#error').html('This username is already taken..Try again');
+		  		}
+		  	});
+		  		$('#username').val('');
+		  	}
+	</script>
+</body>
+</html>

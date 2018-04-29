@@ -24,5 +24,8 @@
     "handlebars": "^4.0.10"
   },
   "author": "bana",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  }
 }

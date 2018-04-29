@@ -4,7 +4,7 @@ this["MyApp"]["templates"]["mylist"] = Handlebars.template({"1":function(contain
   return "	<li><a href=\"#\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
     + ((stack1 = container.invokePartial(partials.arrow,depth0,{"name":"arrow","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "</a></li>\n";
+    + "</a></li>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
